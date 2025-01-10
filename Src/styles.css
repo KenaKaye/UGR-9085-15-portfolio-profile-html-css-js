@@ -1,0 +1,619 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+html, body {
+    overflow-y: auto;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+/* General */
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #04141F;
+    color: white;
+}
+
+header h1 {
+    padding: 0.7em 3.5em;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 5em;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    gap: 10px;   
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Buttons */
+
+.cta-button {
+    margin-top: 1em;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1418EF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+
+.social-icons p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
+
+.social-icons ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-left: 40px; 
+}
+
+.social-icons li {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-logo {
+    width: 24px; 
+    height: 24px;
+    transition: transform 0.3s ease; 
+    color: #1418EF;
+}
+
+.social-icons a:hover {
+    color: #0077b5; 
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Home Page */
+.welcome {
+    text-align: center;
+    padding: 3rem 12rem;
+    background-image: url("Images/background1.webp");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.welcome img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2rem; 
+}
+
+.welcome h2 {
+    font-size: 2.3rem; 
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    max-width: 700px;
+    font-size: 1.1rem; 
+    margin: 0 auto;
+    line-height: 1.6; 
+    text-align: justify;
+}
+
+.first .text-content {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 1rem; 
+    border-radius: 10px; 
+    margin-bottom: 0;
+}
+
+#portLink {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 0.5em;
+    padding-top: 1em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 1em;
+}
+
+#portLink p {
+    font-size: 1.1rem; 
+    margin: 0;
+}
+
+/* aboutMe Page */
+
+.about-me {
+    padding: 3rem 12rem;
+    margin: 0 auto;
+    background-image: url("Images/background1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+.content-left {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-right: 3rem;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    margin-left: 7em;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
+
+.content-left h3 {
+    color: #fff;
+}
+
+.content-left p {
+    color: #fef7f7;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.content-left ul {
+    color: #fff;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.content-left ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+}
+
+.video-container1,
+.video-container2 {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.video-container1 video {
+    display: none;
+}
+
+.video-container2 video {
+    border: none;
+    width: 40%;
+    height: 450px;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.download-cv p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.1em;
+    color: #fef7f7;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cv-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1418EF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+    background-color: #0056b3;
+}
+
+
+/* Portfolio Page */
+
+.portfolio {
+    padding: 3rem 12rem;
+    background-image: url("Images/background1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center; 
+    min-height: 100vh;
+}
+
+.portfolio h2 {
+    text-align: left;
+    margin-left: 7em;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
+
+.portfolio .carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.portfolio .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.portfolio .slide {
+    min-width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.portfolio img {
+    width: 70%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.portfolio h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2em;
+    padding: 0.2em 0.2em;
+    width: fit-content; 
+    display: block; 
+    text-align: left;
+}
+
+.portfolio p {
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #fff;
+    text-align: left;
+    margin: 1rem 0;
+    font-size: 1.1em;
+    max-width: 900px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.portfolio .prev,
+.portfolio .next {
+    text-decoration: none;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: #1418EF;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio .prev {
+    left: 1rem;
+}
+
+.portfolio .next {
+    right: 1rem;
+}
+
+.portfolio .prev:hover,
+.portfolio .next:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+
+/* Hobbies Pages */
+
+.hobbies {
+    padding: 3rem 12rem;
+    margin: 0 auto; 
+    background-image: url("Images/background1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hobbies h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    margin-left: 7em;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
+
+.hobby1,
+.hobby3 {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between; 
+    margin-bottom: 2em;
+}
+
+.hobby2 {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+
+.hobby1 img,
+.hobby2 img,
+.hobby3 img {
+    background-color: rgba(0, 0, 0, 1);
+    width: 400px;
+    height: 250px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.hobby1 h3,
+.hobby2 h3,
+.hobby3 h3 {
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content; /* Dynamically adjust width to content */
+    display: block;
+    text-align: left;
+}
+
+.hobby1 p,
+.hobby2 p,
+.hobby3 p {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Contact Page */
+
+.contact {
+    background-image: url("Images/background1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 12rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 7em;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    width: 100%; 
+}
+
+.form-group {
+    display: flex; 
+    flex-direction: row;
+    gap: 5px; 
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: left;
+    flex: 0 0 90px; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    background: transparent; 
+    border: none; 
+    border-bottom: 2px solid #fff;
+    flex: 1; 
+    color: #fff;
+    font-size: 1em;
+    padding: 0px 0; 
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    outline: none; 
+    border-bottom: 2px solid lightblue;
+}
+
+.form-group textarea {
+    background: transparent; 
+    border: 2px solid #fff; 
+    width: 100%; 
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px; 
+    resize: none; 
+    margin-top: 30px;
+}
+
+
+textarea#message {
+    background: #fff; 
+    border: 2px solid #1418EF; 
+    border-radius: 5px; 
+    width: 100%; 
+    height: 220px;
+    color: #000;
+    font-size: 1.5em;
+    padding: 10px; 
+    resize: none; 
+    margin-bottom: -0.5em;
+}
+
+textarea#message:focus {
+    outline: none; 
+    border-color: #1418EF;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; 
+    border-bottom: 2px solid lightblue;
+}
+
+textarea {
+    resize: none; 
+    height: 200px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.3rem;
+    background-color: #04141F;
+    color: white;
+    width: 100%;
+    margin-top: auto; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+                            

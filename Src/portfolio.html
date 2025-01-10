@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Kena Ararso</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Responsiveness.css">
     <script src="scripts.js" defer></script>
     <link rel="icon" type="image/png" href="Images/favicon.ico">
-
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
                 <li><a href="HomePage.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="hobbies.html">Hobbies & Interests</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -31,59 +31,49 @@
             <p>Here are some of my recent projects:</p>
             
             <div class="carousel">
-                <div class="slide">
-                    <img src="Images/project1.jpg" alt="Project 1">
-                    <h3>Project 1: Full-Stack Web Application</h3>
-                    <p>This project is a full-stack web application designed for efficient folder management. 
-                        The back-end is built using Java with the Spring Boot framework, providing a robust and scalable infrastructure. 
-                        The front-end, developed using React.js, ensures a dynamic and interactive user experience. 
-                        The application includes a secure user authentication system with features such as login, registration, and role-based access control. 
-                        It supports CRUD operations (Create, Read, Update, Delete) for folder and file management, allowing users to organize their digital content seamlessly. 
-                        Additionally, the project boasts a responsive design implemented with Bootstrap, ensuring accessibility across various devices and screen sizes. 
-                        The integration of RESTful APIs facilitates smooth communication between the front-end and back-end, while GitHub was utilized for version control to manage code changes effectively during development.</p>
-                    <a href="https://github.com/KenaKaye/Organize.git" target="_blank">View on GitHub</a>
-                </div>
+                <!-- Carousel Wrapper -->
+                <div class="carousel-inner">
+                    <div class="slide">
+                        <img src="Images/project1.jpg" alt="Project 1">
+                        <h3>Project 1: Full-Stack Web Application</h3>
+                        <p>This project is a full-stack web application designed for efficient folder management. The back-end is built using Java with the Spring Boot framework, providing a robust and scalable infrastructure. The front-end, developed using React.js, ensures a dynamic and interactive user experience. The application includes a secure user authentication system with features such as login, registration, and role-based access control. It supports CRUD operations (Create, Read, Update, Delete) for folder and file management, allowing users to organize their digital content seamlessly. Additionally, the project boasts a responsive design implemented with Bootstrap, ensuring accessibility across various devices and screen sizes. The integration of RESTful APIs facilitates smooth communication between the front-end and back-end, while GitHub was utilized for version control to manage code changes effectively during development.</p>
+                        <a href="https://github.com/KenaKaye/Organize.git" target="_blank"  class="cta-button">View on GitHub</a>
+                    </div>
 
-                <div class="slide">
-                    <img src="Images/project2.jpg" alt="Project 2">
-                    <h3>Project 2: Fithub</h3>
-                    <p>This app allows users to track and achieve their fitness goals efficiently. 
-                        It was developed using Flutter, a versatile UI toolkit, and Dart, ensuring seamless cross-platform functionality for both Android and iOS devices. 
-                        The app features real-time data syncing enabled by Firebase integration, allowing users to access and update their fitness progress across multiple devices. 
-                        It includes an interactive UI/UX design, prioritizing user engagement and ease of navigation with custom widgets and material design principles. 
-                        Key functionalities include goal setting, progress tracking, personalized fitness recommendations, and integration with wearable devices or health APIs to provide real-time metrics such as step counts and calorie burns.</p>
-                    <a href="https://github.com/KenaKaye/Fithub.git" target="_blank">View on GitHub</a>
-                </div>
+                    <div class="slide">
+                        <img src="Images/project2.jpg" alt="Project 2">
+                        <h3>Project 2: Fithub</h3>
+                        <p>This app allows users to track and achieve their fitness goals efficiently. It was developed using Flutter, a versatile UI toolkit, and Dart, ensuring seamless cross-platform functionality for both Android and iOS devices. The app features real-time data syncing enabled by Firebase integration, allowing users to access and update their fitness progress across multiple devices. It includes an interactive UI/UX design, prioritizing user engagement and ease of navigation with custom widgets and material design principles. Key functionalities include goal setting, progress tracking, personalized fitness recommendations, and integration with wearable devices or health APIs to provide real-time metrics such as step counts and calorie burns.</p>
+                        <a href="https://github.com/KenaKaye/Fithub.git" target="_blank"  class="cta-button">View on GitHub</a>
+                    </div>
 
-                <div class="slide">
-                    <img src="Images/project3.jpg" alt="Project 3">
-                    <h3>Project 3: Data Visualization Tool</h3>
-                    <p>This tool provides insightful visualizations for large datasets. I implemented it using Python and the Pandas library, with visualization components created in Matplotlib and Seaborn.</p>
-                    <a href="https://github.com/KenaKaye/Visualize.git" target="_blank">View on GitHub</a>
-                </div>
+                    <div class="slide">
+                        <img src="Images/project3.jpg" alt="Project 3">
+                        <h3>Project 3: Data Visualization Tool</h3>
+                        <p>This tool provides insightful visualizations for large datasets. I implemented it using Python and the Pandas library, with visualization components created in Matplotlib and Seaborn.</p>
+                        <a href="https://github.com/KenaKaye/Visualize.git" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
 
-                <div class="slide">
-                    <img src="Images/project4.jpg" alt="Project 4">
-                    <h3>Project 4: KiloEats</h3>
-                    <p>
-                        KiloEats is an affordable and efficient food delivery platform designed specifically for Addis Ababa University (AAU) students residing in the 4, 5, and 6 Kilo campuses. 
-                        Built with Django, the platform connects students with local restaurants offering budget-friendly meals, featuring a user-friendly interface, real-time order tracking, and secure TeleBirr payment integration.
-                        By addressing challenges such as high delivery costs, limited affordable meal options, and time constraints, KiloEats supports both students and local eateries. 
-                        Key features include live menu updates, optimized delivery routes, a feedback system for service quality improvement, and a custom dashboard for restaurants to manage menus and prices. 
-                        Developed with open-source technologies, it utilizes React.js for a responsive frontend, Nest.js for backend operations, and MongoDB for scalable data management. 
-                        The project, structured using the Waterfall methodology, spans three months and emphasizes seamless user experiences, efficient delivery coordination, and strengthened ties between students and local businesses.</p>
-                    <a href="https://github.com/KenaKaye/KiloEats.git" target="_blank">View on GitHub</a>
-                </div>
+                    <div class="slide">
+                        <img src="Images/project4.jpg" alt="Project 4">
+                        <h3>Project 4: KiloEats</h3>
+                        <p>KiloEats is an affordable and efficient food delivery platform designed specifically for Addis Ababa University (AAU) students residing in the 4, 5, and 6 Kilo campuses. Built with Django, the platform connects students with local restaurants offering budget-friendly meals, featuring a user-friendly interface, real-time order tracking, and secure TeleBirr payment integration. By addressing challenges such as high delivery costs, limited affordable meal options, and time constraints, KiloEats supports both students and local eateries. Key features include live menu updates, optimized delivery routes, a feedback system for service quality improvement, and a custom dashboard for restaurants to manage menus and prices. Developed with open-source technologies, it utilizes React.js for a responsive frontend, Nest.js for backend operations, and MongoDB for scalable data management. The project, structured using the Waterfall methodology, spans three months and emphasizes seamless user experiences, efficient delivery coordination, and strengthened ties between students and local businesses.</p>
+                        <a href="https://github.com/KenaKaye/KiloEats.git" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
 
-                <div class="slide">
-                    <img src="Images/project5.jpg" alt="Project 6">
-                    <h3>Project 5: Portfolio Website</h3>
-                    <p>Designed and developed this personal portfolio website to showcase my skills and projects. The site is fully responsive and built with HTML, CSS, and JavaScript.</p>
-                    <a href="https://github.com/KenaKaye/UGR-9085-15.git" target="_blank">View on GitHub</a>
+                    <div class="slide">
+                        <img src="Images/project5.jpg" alt="Project 5">
+                        <h3>Project 5: Portfolio Website</h3>
+                        <p>Designed and developed this personal portfolio website to showcase my skills and projects. The site is fully responsive and built with HTML, CSS, and JavaScript.</p>
+                        <a href="https://github.com/KenaKaye/UGR-9085-15.git" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
                 </div>
-
-                <a href="#prev" class="prev">&#10094;</a>
-                <a href="#next" class="next">&#10095;</a>
+                <div class="leftRight">
+                    <a href="#prev" class="prev">&#10094;</a>
+                    <a href="#next" class="next">&#10095;</a>
+                </div>
+                
+                
             </div>
         </section>
     </main>
@@ -93,3 +83,5 @@
     </footer>
 </body>
 </html>
+
+
